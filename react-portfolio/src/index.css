@@ -1,0 +1,309 @@
+/* https://visme.co/blog/website-color-schemes/ */
+:root {
+  --light: #88BDBC;
+  --greenblue: #254E58;
+  --darkgreen: #112d32;
+  --lightbrown: #4F4A41;
+  --beige: #6E6658;
+  --white: #fdfefe;
+  --darkgray: #cacaca;
+
+}
+*{
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica,
+    Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+
+  font-size: 1.75rem;
+  line-height: 1.5;
+  
+  background-image: linear-gradient(
+    #88BDBC 0%,
+    #254E58 100%
+  );;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-bottom: 0.625rem;
+  /* color: var(--white); */
+  font-weight: 700;
+  line-height: 1.1;
+  /* display: inline; */
+}
+
+h1 {
+  /* 4rem = 40px (4 * 10px) */
+  font-size: 4rem;
+}
+
+h2 {
+  font-size: 3.5rem;
+  /* text-align: center; */
+}
+
+h3 {
+  font-size: 3rem;
+}
+
+h4 {
+  font-size: 2.5rem;
+}
+
+h5 {
+  font-size: 2rem;
+}
+
+h6 {
+  font-size: 1.5rem;
+}
+
+p {
+  margin-bottom: 1rem;
+  margin-left: 3rem;
+  width:70%;
+}
+
+header {
+  /* width: 100%; */
+  /* margin: 0 auto; */
+  /* padding: 2.5rem; */
+  text-align: center;
+  background-color: var(--greenblue);
+  color: var(--darkgray);
+}
+
+header h1 {
+  /* padding:  1.2rem; */
+  font-size: 4.5rem;
+  margin-top: 0;
+}
+nav  {
+  padding-top: 15px;
+  margin-right: 20px;
+  /* float: right; */
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 20px;
+}
+
+nav ul{
+  list-style-type: none;
+  display: inline-block;
+  /* margin-left: 25px; */
+}
+
+nav ul li {
+  display: inline-block;
+  margin-left: 25px;
+} 
+
+nav a {
+  color: var(--darkgray);
+  font-weight: bold;
+  text-decoration: none;
+}
+a:hover {
+
+  text-decoration: underline;
+  
+}
+
+a {
+  color: var(--darkgray);
+  text-decoration: none;
+}
+
+main {
+  width: 96%;
+  margin: 2rem auto;
+}
+
+.heading {
+
+  border-right: solid;
+  display: flex;
+  color: var(--darkgray);
+  text-align: end;
+  width: 20%;
+  
+  justify-content: flex-start;
+  padding-right: 3%;
+  margin: 5px;
+  
+}
+.heading h2 {
+  /* align-items: center;
+  justify-content: center; */
+  width: 100%;
+}
+.heading p {
+  margin-left: 5%;
+}
+
+footer {
+
+  text-align: center;
+  background-color: var(--greenblue);
+  color: var(--darkgray);
+}
+
+/* create our main grid with flexbox, use negative margins to offset the padding on the .card-column class */
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  /* margin-left: -1.5rem;
+  margin-right: -1.5rem; */
+  width:100%;
+  min-height:0;
+}
+#contenRow {
+  display:flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  width: 100%;
+}
+
+/* make each code card a flexbox column to align and justify content within it */ 
+ .code-card {
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: flex-end;
+  /* min-height: 100%; */
+  padding: 3%;
+  flex: 1 1 35%;
+  min-width: 40%;
+  max-width: 50%;
+  color: var(--heliotrope);
+  height: min-content;
+
+  /* used the outline to help with flex box setup*/
+   /* outline: 2px dashed var(--darkgreen);
+  outline-offset: -2px; */
+  transition: all 0.5s ease-in-out;
+}
+
+.code-card {
+  position: relative;
+  padding: 0.5rem 1rem;
+  background-color: var(--outer-space);
+  color: var(--heliotrope);
+  border: 2px solid var(--gin);
+  border-radius: 8px;
+  transition: all 0.5s ease-in-out;
+  min-height: 0;
+}
+
+.card-header {
+  position: relative;
+  padding-left: 8px;
+  padding-right: 8px;
+  background-color: var(--darkgreen);
+  color: var(--light);
+  border-radius: 8px;
+  transition: all 0.5s ease-in-out;
+  width: fit-content;
+  bottom: 10rem;
+  left: 5%; 
+}
+
+#heroContent .card-header {
+ position: relative;
+ bottom: 15%;
+}
+
+.card-header:hover{
+  box-shadow: inset 0px 0px 8px var(--light), 0px 0px 15px var(--light); 
+}
+
+
+figure {
+  margin-block-start: 0;
+  margin-block-end: 0;
+  margin-inline-end: 0;
+  margin-inline-start: 0;
+}
+
+#heroContent {
+
+  flex: 2 2 70%;
+  max-width: 100%;
+}
+#allContent {
+  display:flex;
+  flex-direction: row;
+  flex-wrap:wrap;
+  width:75%; 
+}
+.regularContent {
+  display:flex;
+  flex-direction: row;
+  flex-wrap:wrap;
+  width:100%;
+}
+
+article {
+  display:flex;
+  flex-direction: column;
+  flex-wrap:wrap;
+  flex: 1 1 75%;
+}
+img {max-width: 100%;
+}
+#Contact img {
+  max-height:10rem;
+}
+
+@media screen and (max-width: 1200px) {
+  a {
+    font-size: 3rem;
+  }
+}
+
+
+@media screen and (max-width: 992px) {
+  
+.row{
+  flex-direction: column;
+  align-items: center;
+  justify-items: center;
+}
+.heading{
+  border-right: none;
+  border-bottom: solid;
+  width: fit-content;
+}
+
+#allContent {
+  flex-direction: column;
+}
+
+.regularContent {
+  flex-direction: column;
+}
+
+.code-card {
+  max-width: none;
+}
+
+.card-header {
+  bottom: 10rem;
+}
+
+#heroContent .card-header {
+  bottom:10rem;
+}
+}
