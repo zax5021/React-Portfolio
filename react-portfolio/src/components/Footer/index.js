@@ -1,5 +1,4 @@
-import { Link } from "react-router-dom";
-import profilePic from "../../images/profilePic.png";
+import profilePic from "../../assets/images/profilePic.png";
 
 function Footer() {
   return (

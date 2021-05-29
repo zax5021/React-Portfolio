@@ -1,4 +1,4 @@
-function Wrapper(props) {
+function ContentWrapper(props) {
   return (
     <div className="content" id="allContent">
       {props.children}
@@ -6,4 +6,4 @@ function Wrapper(props) {
   );
 }
 
-export default Wrapper;
+export default ContentWrapper;

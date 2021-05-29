@@ -1,7 +1,9 @@
-import { Link } from "react-router-dom";
-
-function Article() {
-  return <div>Article</div>;
+function Article(props) {
+  return (
+    <article className={props.class} id={props.id}>
+      {props.children}
+    </article>
+  );
 }
 
 export default Article;
